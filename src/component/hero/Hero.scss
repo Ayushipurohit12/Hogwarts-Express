@@ -1,0 +1,43 @@
+.hero {
+  height: 90vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/train.jpg") center/cover no-repeat;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  transition: color 0.3s ease;
+
+  h1 {
+    font-size: 56px;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+  }
+
+  button {
+    width: fit-content;
+    padding: 12px 26px;
+    background: var(--accent-color1);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background: var(--accent-color2);
+    }
+  }
+}
