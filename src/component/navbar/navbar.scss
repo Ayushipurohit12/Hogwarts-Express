@@ -3,10 +3,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: var(--background);
+  background-color: var(--background-secondary);
   transition: background-color 0.3s ease;
-  position: fixed;
-  width: 100%;
   .brand-container {
     .brand {
       display: flex;
@@ -14,14 +12,11 @@ nav {
       gap: 1rem;
       color: var(--text-primary);
       transition: color 0.3s ease;
-      
       img {
         height: 100%;
         transition: filter 0.3s ease;
-        // Dark theme: logo stays in original colors or light
         filter: brightness(0) invert(1);
       }
-      
       h1 {
         color: var(--text-primary);
         transition: color 0.3s ease;

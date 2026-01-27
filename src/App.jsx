@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import Pages from './pages/pages'
-import './index.css'
-
+import './index.scss'
 function App() {
   const [theme, setTheme] = useState("dark");
   const changeTheme = () => {

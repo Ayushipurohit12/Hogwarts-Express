@@ -1,0 +1,101 @@
+.contact {
+  padding: 6rem;
+  background: radial-gradient(
+    circle at bottom,
+    rgba(157, 96, 212, 0.1),
+    transparent 60%
+  );
+  color: var(--accent-color1);
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center ;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .subtitle {
+      color: var(--pink);
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      font-weight: 600;
+    }
+    .title {
+      font-size: 2.5rem;
+      line-height: 1.3;
+    }
+    .description {
+      color: var(--accent-color3);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+    .details {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      font-size: 1rem;
+    }
+  }
+  .contact-form {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    input, textarea {
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      padding: 0.9rem 1.2rem;
+      border-radius: 0.8rem;
+      color: var(--accent-color1);
+      outline: none ;
+      font-size: 1rem;
+      &::placeholder {
+        color: var(--accent-color3);
+      }
+      &:focus {
+        border-color: var(--pink);
+      }
+    }
+    textarea {
+      min-height: 120px;
+      resize: none;
+    }
+     button {
+        color: var(--accent-color1);
+        background-color: var(--background);
+        font-weight: bold;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+        border: solid 3px transparent;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)
+          ),
+          linear-gradient(101deg, var(--pink), var(--orange));
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        box-shadow: 2px 1000px 1px var(--background) inset;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          box-shadow: none;
+        }
+      }
+  }
+}
+@media screen and (max-width: 1080px) {
+  .contact {
+    padding: 4rem 1rem;
+    .container {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+}
