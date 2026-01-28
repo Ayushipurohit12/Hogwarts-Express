@@ -96,6 +96,30 @@
     .container {
       grid-template-columns: 1fr;
       gap: 3rem;
+      justify-items: center;
+      text-align: center;
+    }
+    .contact-info{
+      align-items: center;
+      .description {
+        max-width: 100%;
+      }
+      .details {
+        align-items: center;
+      }
+    }
+    .contact-form {
+      width: 100%;
+      max-width: 420px ;
+      align-items: center;
+      input,
+      textarea {
+        width: 100%;
+        text-align: left;
+      }
+      button {
+        align-self: center;
+      }
     }
   }
 }

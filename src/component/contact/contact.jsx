@@ -3,7 +3,7 @@ import "./contact.scss";
 export default function Contact() {
   return (
     <section className="contact">
-    8  <div className="container">
+      <div className="container">
         <div className="contact-info">
           <p className="subtitle">Get in Touch</p>
           <h2 className="title">Ready to Begin Your Magical Journey?</h2>

@@ -5,8 +5,8 @@ import Navbar from '../component/navbar/navbar'
 function Home({ changeTheme, currentTheme }) {
   return (
     <>
-    <Navbar changeTheme={changeTheme} currentTheme={currentTheme} />
-    <Hero />
+      <Navbar changeTheme={changeTheme} currentTheme={currentTheme} />
+      <Hero />
     </>
     
   )

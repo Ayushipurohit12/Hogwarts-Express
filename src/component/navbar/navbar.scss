@@ -101,20 +101,17 @@ nav {
     }
   }
 }
-
 [data-theme="dark"] {
   nav {
     .brand-container {
       .brand {
         img {
-          // Dark theme: logo becomes light/white
           filter: brightness(0) invert(1);
         }
       }
     }
   }
 }
-
 [data-theme="light"] {
   nav {
     background-color: var(--background);
@@ -122,18 +119,15 @@ nav {
     .brand-container {
       .brand {
         img {
-          // Light theme: logo becomes dark
           filter: brightness(0) saturate(100%);
         }
       }
-      
       .toggle-container {
         .toggle {
           img {
             filter: brightness(0);
           }
         }
-        
         .mode {
           img {
             filter: brightness(0);
@@ -141,7 +135,6 @@ nav {
         }
       }
     }
-    
     .links-container {
       .links {
         li {
@@ -160,7 +153,6 @@ nav {
     }
   }
 }
-
 @media screen and (min-width: 280px) and (max-width: 1080px) {
   nav {
     position: relative;
@@ -201,7 +193,6 @@ nav {
             }
           }
         }
-        
         .mode {
           img {
             width: 28px;
@@ -263,13 +254,10 @@ nav {
     }
   }
 }
-
-// Mobile theme-specific logo colors
 @media screen and (min-width: 280px) and (max-width: 1080px) {
   [data-theme="dark"] nav .brand-container .brand img {
     filter: brightness(0) invert(1);
   }
-  
   [data-theme="light"] nav .brand-container .brand img {
     filter: brightness(0) saturate(100%);
   }

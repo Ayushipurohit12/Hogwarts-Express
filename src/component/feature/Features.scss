@@ -16,7 +16,7 @@
     text-align: center;
     .subtitle {
       color: var(--pink);
-      text-transform: uppercase;
+      text-transform:  uppercase;
       letter-spacing: 0.15rem;
       font-weight: 600;
       margin-bottom: 0.8rem;
@@ -73,6 +73,11 @@
 @media screen and (max-width: 1080px) {
   .features {
     padding: 4rem 1rem;
+    .features-header {
+      .title {
+        font-size: 2rem;
+      }
+    }
     .features-grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
@@ -81,8 +86,26 @@
 }
 @media screen and (max-width: 600px) {
   .features {
+    padding: 3rem 1rem;
+    .features-header {
+      text-align: center;
+      .title {
+        font-size: 1.7rem;
+      }
+    }
     .features-grid {
       grid-template-columns: 1fr;
+      gap: 1.5rem;
+       justify-items: center; 
+    }
+    .feature-card {
+      width: 100%;
+      max-width: 360px; 
+      padding: 2rem 1.5rem;
+      .icon {
+        font-size: 2.2rem;
+      }
     }
   }
 }
+
