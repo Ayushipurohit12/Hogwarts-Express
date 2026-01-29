@@ -5,7 +5,7 @@
   --text-secondary: #ddd;
   --accent-color1: #c89b3c;
   --accent-color2: #e0b85a;
-  --accent-color3: #f5f5dc;
+  --accent-color3:#f3ececbd;
   --pink: #ff6b9d;
   --orange: #ffa500;
   --border-color: #333;
@@ -29,10 +29,10 @@ html[data-theme="light"],
 html[data-theme="light"] body,
 body[data-theme="light"],
 [data-theme="light"] {
-  --background: #f5eeeeea;
+  --background:#ff6b9d12;
   --background-secondary: #5c58589e;
   --text-primary: #0b0b0b;
-  --text-secondary: #333;
+  --text-secondary: #e2e0eb;
   --accent-color1: #8b6914;
   --accent-color2: #a67c00;
   --accent-color3: #333;
