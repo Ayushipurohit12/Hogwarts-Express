@@ -146,6 +146,7 @@ nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      overflow: hidden;
       width: 100%;
       .brand {
         img {
@@ -207,6 +208,7 @@ nav {
       justify-content: center;
       align-items: center;
       transition: 0.5s ease-in-out;
+      overflow: hidden;
       .links {
         flex-direction: column;
         li {
@@ -237,13 +239,5 @@ nav {
       visibility: visible;
       opacity: 1;
     }
-  }
-}
-@media screen and (min-width: 280px) and (max-width: 1080px) {
-  [data-theme="dark"] nav .brand-container .brand img {
-    // filter: brightness(0) invert(1);
-  }
-  [data-theme="light"] nav .brand-container .brand img {
-    filter: brightness(0) saturate(100%);
   }
 }
