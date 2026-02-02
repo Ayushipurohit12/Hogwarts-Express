@@ -1,27 +1,22 @@
 :root {
-  --background: #0b0b0b;
-  --background-secondary: #1a1a1a;
-  --text-primary: #f5f5dc;
-  --text-secondary: #ddd;
-  --accent-color1: #c89b3c;
-  --accent-color2: #e0b85a;
-  --accent-color3:#f3ececbd;
-  --pink: #ff6b9d;
-  --orange: #ffa500;
-  --border-color: #333;
+  --hogwarts-red: #740001;
+  --hogwarts-gold: #d3a625;
+  --parchment: #f0e6d2;
+  --dark-text: #372e29;
+  --light-text: #f5f5dc;
 }
 [data-theme="dark"],
 body[data-theme="dark"],
 html[data-theme="dark"] {
   --background: #0b0b0b;
-  --background-secondary: #5c58589e;
-  --text-primary: #f5f5dc;
-  --text-secondary: #ddd;
-  --accent-color1: #c89b3c;
-  --accent-color2: #e0b85a;
-  --accent-color3: #f5f5dc;
-  --pink: #ff6b9d;
-  --orange: #ffa500;
+  --background-secondary: #1a1a1a;
+  --text-primary: var(--light-text);
+  --text-secondary: var(--hogwarts-gold);
+  --accent-color1: var(--hogwarts-gold);
+  --accent-color2: var(--hogwarts-red);
+  --accent-color3: #e0e0e0;
+  --pink: var(--hogwarts-red);
+  --orange: var(--hogwarts-gold);
   --border-color: #333;
 }
 
@@ -29,16 +24,16 @@ html[data-theme="light"],
 html[data-theme="light"] body,
 body[data-theme="light"],
 [data-theme="light"] {
-  --background:#ff6b9d12;
-  --background-secondary: #5c58589e;
-  --text-primary: #0b0b0b;
-  --text-secondary: #e2e0eb;
-  --accent-color1: #8b6914;
-  --accent-color2: #a67c00;
-  --accent-color3: #333;
-  --pink: #ff6b9d;
-  --orange: #ffa500;
-  --border-color: #ddd;
+  --background: var(--parchment);
+  --background-secondary: #e6dcc3;
+  --text-primary: var(--dark-text);
+  --text-secondary: var(--hogwarts-red);
+  --accent-color1: var(--hogwarts-red);
+  --accent-color2: var(--hogwarts-gold);
+  --accent-color3: #5c5858;
+  --pink: var(--hogwarts-red);
+  --orange: var(--hogwarts-gold);
+  --border-color: var(--hogwarts-red);
 }
 
 * {
@@ -56,7 +51,7 @@ body {
 
 .app-container {
   min-height: 100vh;
-  background-color: var(--background);
+  
   color: var(--text-primary);
   transition: background-color 0.4s ease, color 0.3s ease;
 }

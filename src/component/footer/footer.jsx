@@ -25,12 +25,11 @@ export default function Footer() {
           <ul>
             <li>Terms of Magic</li>
             <li>Privacy Policy</li>
-            <li>Wizard Help</li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom ">
-        <p>2026 Hogwarts Express. All rights reserved.</p>
+        <p>2026 Hogwarts Express All rights reserved.</p>
       </div>
     </footer>
   );

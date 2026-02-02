@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "../../assets/train.svg";
 import "./navbar.scss";
 import Dark from "../../assets/dark.svg";
 import Light from "../../assets/light.svg";
@@ -40,14 +39,14 @@ const CloseIcon = ({ onClick, className }) => (
     <line x1="6" y1="6" x2="18" y2="18"></line>
   </svg>
 );
+const logo = "https://i.pinimg.com/736x/57/44/8a/57448aa1269568cc5f1957749fb65849.jpg";
 export default function Navbar({ changeTheme, currentTheme }) {
   const [navState, setNavState] = useState(false);
   return (
     <nav>
       <div className="brand-container">
         <div className="brand">
-          <img src={Logo} alt="logo" width={50} height={50} />
-          <h1>Hogwarts Express</h1>
+          <img src={logo} alt="Hogwarts Express Logo" />
         </div>
         <div className="toggle-container">
           <div className="toggle">
