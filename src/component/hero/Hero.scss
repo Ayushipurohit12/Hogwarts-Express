@@ -29,7 +29,13 @@
       left: 0;
       width: 100%;
       height: 100%;
-      // background-color: rgba(0, 0, 0, 0.5);
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.9) 100%
+      );
+      animation: pulseOverlay 5s ease-in-out infinite alternate;
     }
   }
 
@@ -39,8 +45,6 @@
     width: 100%;
     max-width: 1200px;
     padding: 0 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     font-size: 32px;
     .content {
@@ -52,14 +56,20 @@
         color: var(--hogwarts-gold);
         text-transform: uppercase;
         letter-spacing: 0.1rem;
+        opacity: 0;
+        animation: fadeInUp 1s ease forwards 0.5s;
       }
       .title {
         color: #ffffff;
         font-size: 4rem;
         line-height: 1.1;
+        opacity: 0;
+        animation: fadeInUp 1s ease forwards 0.7s;
       }
       .description {
         color: #e0e0e0;
+        opacity: 0;
+        animation: fadeInUp 1s ease forwards 0.9s;
       }
       button {
         color: var(--hogwarts-red);
@@ -71,16 +81,20 @@
         box-shadow: none;
         transition: 0.5s ease-in-out;
         cursor: pointer;
+        opacity: 0;
+        animation: fadeInUp 1s ease forwards 1.1s;
         &:hover {
           background-color: var(--hogwarts-red);
           color: var(--hogwarts-gold);
         }
       }
 
-      .share-btn {
+      .share {
         background: var(--hogwarts-red);
         color: var(--hogwarts-gold);
         border: 2px solid var(--hogwarts-gold);
+        opacity: 0;
+        animation: fadeInUp 1s ease forwards 1.3s;
         &:hover {
           background: var(--hogwarts-gold);
           color: var(--hogwarts-red);
@@ -88,18 +102,34 @@
       }
     }
   }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes pulseOverlay {
+    0% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
-  .home {
-    height: auto;
-    min-height: 100vh;
-    padding: 4rem 1.5rem;
-    .container {
-      grid-template-columns: 1fr;
-      text-align: center;
-      font-size: 18px;
-      .content {
-        align-items: center;
+  .home .container {
+    padding: 0 1.5rem;
+    text-align: center;
+    font-size: 16px;
+    .content {
+      align-items: center;
+      .title {
+        font-size: 2.5rem;
       }
     }
   }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navbar.scss";
 import Dark from "../../assets/dark.svg";
 import Light from "../../assets/light.svg";
+import { NavLink } from "react-router-dom";
 
 const HamburgerMenu = ({ onClick, className }) => (
   <svg
@@ -45,9 +46,9 @@ export default function Navbar({ changeTheme, currentTheme }) {
   return (
     <nav>
       <div className="brand-container">
-        <div className="brand">
+        <NavLink to="/" className="brand">
           <img src={logo} alt="Hogwarts Express Logo" />
-        </div>
+        </NavLink>
         <div className="toggle-container">
           <div className="toggle">
             {navState ? (
@@ -68,19 +69,21 @@ export default function Navbar({ changeTheme, currentTheme }) {
       <div className={`links-container ${navState ? "nav-visible" : ""}`}>
         <ul className="links">
           <li>
-            <a href="#features">Home</a>
+            <NavLink to="/" end>
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="#journey">Journey</a>
+            <NavLink to="/journey">Journey</NavLink>
           </li>
           <li>
-            <a href="#features">Features</a>
+            <NavLink to="/features">Features</NavLink>
           </li>
           <li>
-            <a href="#launch">Contact</a>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-            <a href="#footer">Footer</a>
+            <NavLink to="/footer">Footer</NavLink>
           </li>
           <li onClick={changeTheme}>
             {currentTheme === "dark" ? (
