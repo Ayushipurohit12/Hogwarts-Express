@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.scss"
+import { NavLink } from "react-router-dom";
 
 
 export default function Footer() {
@@ -13,12 +14,25 @@ export default function Footer() {
         </div>
         <div className="footer-links">
           <h4>Explore</h4>
-          <ul>
-            <li>Home</li>
-            <li>Journey</li>
-            <li>Features</li>
-            <li>Contact</li>
-          </ul>
+           <ul className="links">
+          <li>
+            <NavLink className="nav-link" to="/" end>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-link" to="/journey">Journey</NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-link" to="/features">Features</NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-link" to="/contact">Contact</NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-link" to="/footer">Footer</NavLink>
+          </li>
+        </ul>
         </div>
         <div className="footer-links">
          <h4>Support</h4>
