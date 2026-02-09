@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="background-media">
         <video
           className="video-bg"
-          autoPlay 
+          autoPlay
           loop
           muted
           playsInline
@@ -17,10 +17,10 @@ export default function Hero() {
       </div>
       <div className="container">
         <div className="content">
-          <div className="main">
-            <span className="sub-title">Welcome to the Wizarding World</span>
-            <h1 className="title">All Aboard the Hogwarts Express</h1>
-          </div>
+          <span className="sub-title">Welcome to the Wizarding World</span>
+
+          <h1 className="title">All Aboard the Hogwarts Express</h1>
+
           <p className="description">
             Step onto Platform 9¾ and begin your magical journey to Hogwarts
             School of Witchcraft and Wizardry. The train is about to depart!

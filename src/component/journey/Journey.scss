@@ -161,3 +161,32 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .journey {
+    .journey-visual {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      height: auto;
+      margin-top: 2rem;
+
+      .dot {
+        position: relative;       
+        left: auto;
+        top: auto;
+        transform: none;           
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;           
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        animation: none;
+      }
+    }
+  }
+}
